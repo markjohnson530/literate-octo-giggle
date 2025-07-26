@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 35em;
+  margin: 0 auto;
+  margin-top: calc(1vh / 0.1);
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+a { 
+  color: blue;
+}
+
+a:hover {
+  color:#0063ff;
+  cursor:pointer;
+}
+
+
+
+.toplinks {
+  color :#d4d4d4;
+  word-spacing: 4px;
+  user-select: none;
+}
+
+.toplinks a {
+  color: #3966c4;
+}
+
+.toplinks a:hover {
+  color:#0063ff;
+  cursor:pointer;
+}
+
+.current {
+  color:black;
+  cursor:context-menu;
+}
+

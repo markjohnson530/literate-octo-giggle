@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>f68.space/contact</title>
+<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="box">
+<center class="toplinks">
+<a href="https://f68.space">HOME</a> <a href="https://f68.space/rules">RULES</a> <span class="current">CONTACT</span>
+</center>
+
+
+<h1 style="font-style: italic;">f68's SURVIVAL</h1>
+
+<h3> CONTACT </h3>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfki_2GQPhKC9yqz8GBI3YfGnmFAPJLDNFun81wFq2SDIo4UA/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <legend for="79827794">Regarding:</legend>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1779950143" value="Server bug / issue" autocomplete="off" required>
+                    Server bug / issue
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1779950143" value="Suggestion" autocomplete="off" required>
+                    Suggestion
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1779950143" value="Player Report" autocomplete="off" required>
+                    Player Report
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.1779950143" value="Other" autocomplete="off" required>
+                    Other
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend for="1508073017">Email to receive response if necessary (optional)</legend>
+        <div class="form-group">
+            <input id="2135637862" type="text" name="entry.2135637862" class="form-control" autocomplete="off">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend for="492797589">Your Minecraft username (optional)</legend>
+        <div class="form-group">
+            <input id="621590018" type="text" name="entry.621590018" class="form-control" autocomplete="off">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend for="633622142">Include detailed message below</legend>
+        <div class="form-group">
+            <textarea placeholder="if you do not provide enough basic information to adequately research your reason of contact, we will probably not reach out to get further and you will likely just be ignored."style="width: 99%; height: 150px;" id="1096808453" name="entry.1096808453" class="form-control" autocomplete="off" required></textarea>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-5982888020476286774">
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input type="submit" value="Submit" id="submit-button">
+</form>
+
+
+<div id="confirmation-message" style="display:none; margin-top: 15px; color: green;">
+    Thank you! Your submission has been received.
+</div>
+
+<script>
+document.getElementById("bootstrapForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        mode: "no-cors",
+        body: data
+    }).then(() => {
+        document.getElementById("confirmation-message").style.display = "block";
+        form.reset();
+    }).catch((error) => {
+        alert("Submission failed. Please try again.");
+        console.error("Error:", error);
+    });
+});
+</script>
+</div>
+</body>
+</html>
