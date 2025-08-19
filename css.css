@@ -19,6 +19,12 @@ html {
   font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
+.box2 {
+  background: #dedede;
+  padding: 12px;
+  margin: 12px 0px;
+}
+
 a { 
   color: blue;
 }
@@ -55,3 +61,4 @@ a:hover {
   font-size:15px;
   margin: 2px;
 }
+
